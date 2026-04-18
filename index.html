@@ -197,6 +197,53 @@
   .footer a { color:var(--rose); text-decoration:none; }
   .footer a:hover { text-decoration:underline; }
   .hidden { display:none !important; }
+  .product-section { margin-bottom: 20px; }
+  .product-section-title {
+    font-family: 'Lora', serif;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-soft);
+    margin-bottom: 10px;
+    padding-left: 4px;
+  }
+  .product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cream);
+    border: 1px solid rgba(201,168,110,0.2);
+    border-radius: 12px;
+    padding: 13px 15px;
+    margin-bottom: 9px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(122,99,82,0.05);
+  }
+  .product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(122,99,82,0.12);
+    border-color: rgba(201,168,110,0.4);
+  }
+  .product-card-info { flex: 1; padding-right: 12px; }
+  .product-card-name {
+    font-family: 'Lora', serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 3px;
+  }
+  .product-sub-heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.1rem;
+    color: var(--rose-deep);
+    margin: 8px 0 10px 2px;
+  }
+  .product-card-desc {
+    font-size: 0.72rem;
+    color: var(--text-soft);
+    line-height: 1.4;
+  }
 </style>
 </head>
 <body>
@@ -375,13 +422,150 @@
     </div>
   </div>
 
-  <div class="section-heading">
-    <h2>Nic's current favorites</h2>
+  <div class="section-heading" id="shopSection">
+    <h2 id="sectionHeading">Nic's current favorites</h2>
     <div class="section-rule"></div>
   </div>
 
   <!-- CARDS -->
   <div class="categories" id="catGrid">
+
+    <!-- HOME DECOR PRODUCTS -->
+    <div class="product-section" data-cat="home" style="display:none">
+
+      <div class="product-sub-heading">Furniture</div>
+
+      <a class="product-card" href="https://amzn.to/3OLeDtu" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Farmhouse TV Stand</div>
+          <div class="product-card-desc">Entertainment center with barn doors — rustic charm meets function</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4sNteTb" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Modern Farmhouse Storage Cabinet</div>
+          <div class="product-card-desc">Stylish storage that keeps your home organized &amp; beautiful</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4mE69Rw" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Farmhouse Console Table</div>
+          <div class="product-card-desc">A versatile entryway or living room statement piece</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/42fZXFO" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Farmhouse Sofa &amp; Console Table</div>
+          <div class="product-card-desc">Beautiful behind-the-sofa accent table with farmhouse feel</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4tk3nU5" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Farmhouse Accent Chair</div>
+          <div class="product-card-desc">A cozy, stylish chair that anchors any farmhouse living space</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <div class="product-sub-heading">Lighting</div>
+
+      <a class="product-card" href="https://amzn.to/4vEfZH6" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Ceramic Farmhouse Lamps</div>
+          <div class="product-card-desc">Warm, elegant ceramic lamps to light up any farmhouse room</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/41GJytY" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Rustic Table Lamp Set of 2</div>
+          <div class="product-card-desc">Warm rustic glow — perfect pair for bedside or living room</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4vKjGv1" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Dimmable Lamps with Charging Ports</div>
+          <div class="product-card-desc">Style meets function — dimmable with built-in USB charging</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <div class="product-sub-heading">Mirrors &amp; Wall Decor</div>
+
+      <a class="product-card" href="https://amzn.to/4tk3NtD" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Maple Rustic Mirror</div>
+          <div class="product-card-desc">A statement mirror that brings warmth &amp; character to any wall</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <div class="product-sub-heading">Accents &amp; Decor</div>
+
+      <a class="product-card" href="https://amzn.to/4dWadKA" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Rustic Decorative Lanterns Set of 2</div>
+          <div class="product-card-desc">Charming farmhouse lanterns for porch, mantle or table styling</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4tTtDo3" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Ceramic Flower Vase</div>
+          <div class="product-card-desc">Elegant ceramic vase — a simple touch that elevates any space</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4cSJspa" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Artificial Flowers with Vase</div>
+          <div class="product-card-desc">Beautiful blooms that never wilt — perfect for any room</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <div class="product-sub-heading">Storage &amp; Organization</div>
+
+      <a class="product-card" href="https://amzn.to/4tSN402" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Rustic Blanket Ladder</div>
+          <div class="product-card-desc">Display your throws in style with this rustic wood ladder</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/3OqLN1u" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Blanket Basket</div>
+          <div class="product-card-desc">A cozy woven basket — store blankets beautifully within reach</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <div class="product-sub-heading">Rugs</div>
+
+      <a class="product-card" href="https://amzn.to/4sHBunO" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Farmhouse Accent Rug</div>
+          <div class="product-card-desc">Ground your space with a warm farmhouse-style area rug</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+    </div>
 
     <!-- HOME DECOR -->
     <a class="cat-card" data-cat="home" href="https://www.amazon.com/s?k=farmhouse+home+decor&tag=nicsjemsandmo-20" target="_blank" style="animation-delay:0.1s">
@@ -407,6 +591,73 @@
       </div>
       <div class="cat-cta"><button class="shop-btn">Shop</button></div>
     </a>
+
+    <!-- KITCHEN PRODUCTS -->
+    <div class="product-section" data-cat="kitchen" style="display:none">
+
+      <div class="product-sub-heading">Kitchen Decor</div>
+
+      <a class="product-card" href="https://amzn.to/4tl1nuw" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Rustic Utensil Holder</div>
+          <div class="product-card-desc">Keep your countertop organized with farmhouse charm</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4epKVEMu" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Mason Salt &amp; Pepper Jars</div>
+          <div class="product-card-desc">Adorable mason jar style salt &amp; pepper — a farmhouse kitchen staple</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4mD5kYV" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Cookbook Stand</div>
+          <div class="product-card-desc">Display your favorite recipes in style while you cook</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4mzPNt0" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Spoon Holder</div>
+          <div class="product-card-desc">Keep your stovetop tidy with this charming spoon rest</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <div class="product-sub-heading">Storage &amp; Organization</div>
+
+      <a class="product-card" href="https://amzn.to/4sCQJy9" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Rustic Lazy Susan</div>
+          <div class="product-card-desc">Spin your way to an organized table or pantry in rustic style</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <a class="product-card" href="https://amzn.to/4cRJQUX" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Bamboo Bread Box</div>
+          <div class="product-card-desc">Keep bread fresh &amp; counters beautiful with this bamboo beauty</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+      <div class="product-sub-heading">Kitchen Rugs &amp; Mats</div>
+
+      <a class="product-card" href="https://amzn.to/3QdkMz7" target="_blank">
+        <div class="product-card-info">
+          <div class="product-card-name">Kitchen Floor Mat</div>
+          <div class="product-card-desc">Comfort underfoot with a farmhouse style that ties the kitchen together</div>
+        </div>
+        <button class="shop-btn">Shop</button>
+      </a>
+
+    </div>
 
     <!-- KITCHEN -->
     <a class="cat-card" data-cat="kitchen" href="https://www.amazon.com/s?k=farmhouse+kitchen+essentials&tag=nicsjemsandmo-20" target="_blank" style="animation-delay:0.18s">
@@ -511,8 +762,8 @@
   <div class="storefront-cta">
     <h3>Browse All of Nic's Picks</h3>
     <p>New finds added regularly &mdash; don't miss a gem!</p>
-    <a class="storefront-btn" href="https://www.amazon.com/shop/nicsjemsandmo?tag=nicsjemsandmo-20" target="_blank">
-      Visit My Amazon Storefront
+    <a class="storefront-btn" href="https://www.amazon.com/s?k=farmhouse+home+decor&tag=nicsjemsandmo-20" target="_blank">
+      Shop All Amazon Finds
     </a>
   </div>
 
@@ -533,17 +784,33 @@
 </div>
 <script>
   function filterCats(cat, btn) {
+    // Update active button
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    document.querySelectorAll('.cat-card').forEach((card, i) => {
-      const show = cat === 'all' || card.dataset.cat === cat;
-      card.classList.toggle('hidden', !show);
-      if (show) {
-        card.style.animation = 'none';
-        card.style.animationDelay = (i * 0.07) + 's';
-        requestAnimationFrame(() => { card.style.animation = ''; });
-      }
+
+    // Category cards — show all on 'all', show matching on specific
+    document.querySelectorAll('.cat-card').forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'flex' : 'none';
     });
+
+    // Product sections — always hide on 'all', show matching on specific
+    document.querySelectorAll('.product-section').forEach(section => {
+      section.style.display = (cat !== 'all' && section.dataset.cat === cat) ? 'block' : 'none';
+    });
+
+    // Update heading
+    const labels = {
+      all: "Nic's current favorites",
+      home: 'Home Decor & Organization',
+      kitchen: 'Kitchen & Cooking',
+      fashion: 'Fashion & Accessories',
+      health: 'Health & Wellness',
+      outdoor: 'Outdoor & Garden'
+    };
+    document.getElementById('sectionHeading').textContent = labels[cat] || "Nic's picks";
+
+    // Scroll to section
+    document.getElementById('shopSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 </script>
 </body>
